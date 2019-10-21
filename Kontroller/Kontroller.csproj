@@ -47,5 +47,18 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{05f82a84-70f7-4831-9b28-2f9b41089027}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vista\vista.csproj">
+      <Project>{e473dac3-353c-4e4e-895e-b625524d89c7}</Project>
+      <Name>vista</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
